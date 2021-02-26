@@ -13,6 +13,9 @@ persist.vendor.btstack.enable.twsplus=true
 persist.vendor.bt.a2dp.hal.implementation=true
 ro.bluetooth.library_name=libbluetooth_qti.so
 
+# Bluetooth
+persist.vendor.bt.a2dp.aac_whitelist=false
+
 # Camera
 camera.disable_zsl_mode=true
 
