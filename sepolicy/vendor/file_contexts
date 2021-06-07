@@ -171,7 +171,7 @@
 # Fingerprint
 /mnt/vendor/persist/engineermode/fpqrcode                                                          u:object_r:vendor_persist_fingerprint_file:s0
 
-# Force Game Mode
+# Touchpanel
 /proc/touchpanel/force_game_switch_enable    u:object_r:proc_touchpanel:s0
 
 # Hexagon DSP-side executable needed for Halide operation
