@@ -33,6 +33,12 @@
         android:title="@string/display_title">
 
         <SwitchPreference
+            android:key="dc"
+            android:icon="@drawable/ic_dc_mode"
+            android:summary="@string/dc_mode_summary"
+            android:title="@string/dc_mode_title" />
+
+        <SwitchPreference
             android:key="auto_hbm"
             android:icon="@drawable/ic_autohbm_mode"
             android:summary="@string/auto_hbm_summary"
