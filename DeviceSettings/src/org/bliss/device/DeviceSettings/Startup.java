@@ -26,15 +26,19 @@ import android.text.TextUtils;
 import androidx.preference.PreferenceManager;
 
 import org.bliss.device.DeviceSettings.DolbySwitch;
+import org.bliss.device.DeviceSettings.TouchscreenGestureSettings;
 
 public class Startup extends BroadcastReceiver {
 
     private static final String ONE_TIME_DOLBY = "dolby_init_disabled";
+    private static final String ONE_TIME_TUNABLE_RESTORE = "hardware_tunable_restored";
+    private static final String TAG = "BootReceiver";
 
     @Override
     public void onReceive(final Context context, final Intent bootintent) {
 
         boolean enabled = false;
+        TouchscreenGestureSettings.MainSettingsFragment.restoreTouchscreenGestureStates(context);
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_DC_SWITCH, false);
         if (enabled) {
@@ -61,6 +65,17 @@ public class Startup extends BroadcastReceiver {
         }
         org.bliss.device.DeviceSettings.Doze.Utils.checkDozeService(context);
         DeviceSettings.restoreVibStrengthSetting(context);
+    }
+
+
+    private boolean hasRestoredTunable(Context context) {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+        return preferences.getBoolean(ONE_TIME_TUNABLE_RESTORE, false);
+    }
+
+    private void setRestoredTunable(Context context) {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+        preferences.edit().putBoolean(ONE_TIME_TUNABLE_RESTORE, true).apply();
     }
 
     private void restore(String file, boolean enabled) {
