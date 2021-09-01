@@ -127,6 +127,7 @@
     <string name="touchscreen_gesture_action_next_track">Play the next music track</string>
     <string name="touchscreen_gesture_action_volume_down">Lower media volume</string>
     <string name="touchscreen_gesture_action_volume_up">Raise media volume</string>
+    <string name="touchscreen_gesture_action_ambient_display">Show ambient display</string>
 
     <!-- Touchpanel -->
     <string name="touchpanel_title">Touchpanel</string>
