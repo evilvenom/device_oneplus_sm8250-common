@@ -90,4 +90,10 @@
     <!-- Default state for LiveDisplay -->
     <bool name="config_enableLiveDisplay">true</bool>
 
+    <!-- Whether to show a custom view for FOD -->
+    <bool name="config_needCustomFODView">true</bool>
+
+    <!-- Default fod pressed color -->
+    <integer name="config_fod_pressed_color">2</integer>
+
 </resources>
