@@ -14,13 +14,13 @@
      limitations under the License.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:settings="http://schemas.android.com/apk/res/org.havoc.device.DeviceSettings">
+	xmlns:settings="http://schemas.android.com/apk/res/org.bliss.device.DeviceSettings">
 
     <PreferenceCategory
         android:key="slider"
         android:title="@string/slider_title">
 
-        <com.havoc.support.preferences.SwitchPreference
+        <com.bliss.support.preferences.SwitchPreference
             android:key="mute_media"
             android:icon="@drawable/ic_audio_media"
             android:title="@string/mute_media_title"
@@ -42,19 +42,19 @@
                     android:action="android.settings.DC_DIMMING_SETTINGS" /> 
      </Preference>
 
-        <com.havoc.support.preferences.SwitchPreference
+        <com.bliss.support.preferences.SwitchPreference
             android:key="auto_hbm"
             android:icon="@drawable/ic_autohbm_mode"
             android:summary="@string/auto_hbm_summary"
             android:title="@string/auto_hbm_title" />
 
-        <org.havoc.device.DeviceSettings.AutoHBMThresholdPreference
+        <org.bliss.device.DeviceSettings.AutoHBMThresholdPreference
             android:key="auto_hbm_threshold"
             android:icon="@drawable/ic_autohbm_threshold"
             android:title="@string/auto_hbm_threshold_title"
             android:summary="@string/auto_hbm_threshold_summary" />
             
-       <com.havoc.support.preferences.SwitchPreference
+       <com.bliss.support.preferences.SwitchPreference
             android:key="hbm"
             android:icon="@drawable/ic_hbm_mode"
             android:summary="@string/hbm_mode_summary"
@@ -66,7 +66,7 @@
         android:key="dolby"
         android:title="@string/dolby_category">
 
-        <com.havoc.support.preferences.SwitchPreference
+        <com.bliss.support.preferences.SwitchPreference
             android:key="enable_dolby_atmos"
             android:summary="@string/enable_dolby_summary"
             android:title="@string/enable_dolby_title"
@@ -98,7 +98,7 @@
             android:summary="@string/ambient_display_gestures_summary"
             android:persistent="false" >
             <intent android:action="android.intent.action.MAIN"
-                    android:targetClass="org.havoc.device.DeviceSettings.Doze.DozeSettingsActivity" />
+                    android:targetClass="org.bliss.device.DeviceSettings.Doze.DozeSettingsActivity" />
         </Preference>
     </PreferenceCategory>
 
@@ -106,7 +106,7 @@
         android:key="fps"
         android:title="@string/fps_title">
 		
-        <com.havoc.support.preferences.SwitchPreference
+        <com.bliss.support.preferences.SwitchPreference
             android:key="fps_info"
             android:icon="@drawable/ic_fps_overlay"
             android:title="@string/fps_info_title"
@@ -131,7 +131,7 @@
             android:entries="@array/fps_info_color_entries"
             android:entryValues="@array/fps_info_color_values" />
 
-        <com.havoc.support.preferences.CustomSeekBarPreference
+        <com.bliss.support.preferences.CustomSeekBarPreference
             android:key="fps_info_text_size"
             android:icon="@drawable/ic_fps_text"
             android:title="@string/fps_info_text_size_title"
@@ -163,7 +163,7 @@
         android:key="touchpanel"
         android:title="@string/touchpanel_title">
 
-        <com.havoc.support.preferences.SwitchPreference
+        <com.bliss.support.preferences.SwitchPreference
             android:key="game_mode"
             android:icon="@drawable/ic_game_mode"
             android:summary="@string/game_mode_summary"
@@ -179,7 +179,7 @@
         android:key="vibrator"
         android:title="@string/category_vibrator">
 
-        <org.havoc.device.DeviceSettings.VibratorStrengthPreference
+        <org.bliss.device.DeviceSettings.VibratorStrengthPreference
             android:key="vib_strength"
             android:icon="@drawable/ic_vibration"
             android:title="@string/vib_strength_title_head"
