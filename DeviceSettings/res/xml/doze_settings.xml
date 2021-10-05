@@ -43,7 +43,7 @@
         android:key="proximity_sensor"
         android:title="@string/proximity_sensor_title">
 
-        <com.bliss.support.preferences.SwitchPreference
+        <SwitchPreference
             android:key="gesture_pocket"
             android:defaultValue="false"
             android:icon="@drawable/ic_pocket"

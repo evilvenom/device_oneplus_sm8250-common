@@ -30,8 +30,6 @@
     <string name="auto_hbm_threshold_title">Soglia alta luminosità automatica (lux)</string>
     <string name="auto_hbm_threshold_summary">Regola il picco della luminanza del display </string>
     <string name="tile_hbm_mode">Alta luminosità</string>
-    <string name="dc_mode_summary">Diminuisci la retroilluminazione regolando la corrente CC disegnata sul display</string>
-    <string name="dc_mode_title">DC Dimming automatico</string>
     <!-- Dolby -->
     <string name="dolby_category">Dolby</string>
     <string name="enable_dolby_title">Dolby Atmos</string>

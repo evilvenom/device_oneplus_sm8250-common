@@ -30,8 +30,6 @@
     <string name="auto_hbm_threshold_title">自动高亮度模式阈值 (lux)</string>
     <string name="auto_hbm_threshold_summary">调节模式开启时的最大亮度</string>
     <string name="tile_hbm_mode">高亮度模式</string>
-    <string name="dc_mode_summary">通过改变电路功率来调节屏幕背光</string>
-    <string name="dc_mode_title">防闪烁模式（DC-调光）</string>
     <!-- Dolby -->
     <string name="dolby_category">音频</string>
     <string name="enable_dolby_title">杜比全景声</string>

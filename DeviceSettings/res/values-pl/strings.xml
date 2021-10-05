@@ -30,8 +30,6 @@
     <string name="auto_hbm_threshold_title">Próg automatycznej wysokiej jasności (lux)</string>
     <string name="auto_hbm_threshold_summary">Dostosuj szczytową luminancję wyświetlacza </string>
     <string name="tile_hbm_mode">Wysoka jasność</string>
-    <string name="dc_mode_summary">Przyciemnij podświetlenie ekranu poprzez zmianę obwodu mocy ekranu</string>
-    <string name="dc_mode_title">Automatyczne przyciemnianie DC</string>
     <!-- Dolby -->
     <string name="dolby_category">Dolby</string>
     <string name="enable_dolby_title">Dolby Atmos</string>

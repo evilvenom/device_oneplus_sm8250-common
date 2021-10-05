@@ -20,7 +20,7 @@
         android:key="slider"
         android:title="@string/slider_title">
 
-        <com.bliss.support.preferences.SwitchPreference
+        <SwitchPreference
             android:key="mute_media"
             android:icon="@drawable/ic_audio_media"
             android:title="@string/mute_media_title"
@@ -32,17 +32,7 @@
         android:key="graphics"
         android:title="@string/display_title">
 
-    <Preference
-            android:key="dc_dim"
-            android:enabled="true"
-            android:icon="@drawable/ic_dc_mode"
-            android:summary="@string/dc_mode_summary"
-            android:title="@string/dc_mode_title">
-            <intent
-                    android:action="android.settings.DC_DIMMING_SETTINGS" /> 
-     </Preference>
-
-        <com.bliss.support.preferences.SwitchPreference
+        <SwitchPreference
             android:key="auto_hbm"
             android:icon="@drawable/ic_autohbm_mode"
             android:summary="@string/auto_hbm_summary"
@@ -54,7 +44,7 @@
             android:title="@string/auto_hbm_threshold_title"
             android:summary="@string/auto_hbm_threshold_summary" />
             
-       <com.bliss.support.preferences.SwitchPreference
+       <SwitchPreference
             android:key="hbm"
             android:icon="@drawable/ic_hbm_mode"
             android:summary="@string/hbm_mode_summary"
@@ -66,7 +56,7 @@
         android:key="dolby"
         android:title="@string/dolby_category">
 
-        <com.bliss.support.preferences.SwitchPreference
+        <SwitchPreference
             android:key="enable_dolby_atmos"
             android:summary="@string/enable_dolby_summary"
             android:title="@string/enable_dolby_title"
@@ -106,7 +96,7 @@
         android:key="fps"
         android:title="@string/fps_title">
 		
-        <com.bliss.support.preferences.SwitchPreference
+        <SwitchPreference
             android:key="fps_info"
             android:icon="@drawable/ic_fps_overlay"
             android:title="@string/fps_info_title"
@@ -143,27 +133,10 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="gestures"
-        android:title="@string/screen_gestures_panel_title">
-
-        <Preference
-            android:key="touchscreen_gesture_settings"
-            android:icon="@drawable/ic_gestures_icon"
-            android:persistent="false"
-            android:title="@string/touchscreen_gesture_settings_title"
-            android:summary="@string/touchscreen_gesture_settings_summary">
-            <intent
-                    android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.android.touch.gestures"
-                    android:targetClass="com.android.touch.gestures.TouchscreenGestureSettings" />
-        </Preference>
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:key="touchpanel"
         android:title="@string/touchpanel_title">
 
-        <com.bliss.support.preferences.SwitchPreference
+        <SwitchPreference
             android:key="game_mode"
             android:icon="@drawable/ic_game_mode"
             android:summary="@string/game_mode_summary"
@@ -179,7 +152,7 @@
         android:key="vibrator"
         android:title="@string/category_vibrator">
 
-        <org.bliss.device.DeviceSettings.VibratorStrengthPreference
+        <com.bliss.support.preferences.CustomSeekBarPreference
             android:key="vib_strength"
             android:icon="@drawable/ic_vibration"
             android:title="@string/vib_strength_title_head"

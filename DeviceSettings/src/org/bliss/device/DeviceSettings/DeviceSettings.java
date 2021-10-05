@@ -46,6 +46,7 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.SwitchPreference;
 import androidx.preference.TwoStatePreference;
 import androidx.preference.SwitchPreference;
 import com.bliss.support.preferences.CustomSeekBarPreference;
@@ -87,7 +88,8 @@ public class DeviceSettings extends PreferenceFragment
     private static TwoStatePreference mAutoHBMSwitch;
     private static TwoStatePreference mMuteMedia;
     private static TwoStatePreference mEnableDolbyAtmos;
-    private VibratorStrengthPreference mVibratorStrengthPreference;
+
+    private CustomSeekBarPreference mVibratorStrengthPreference;
     private CustomSeekBarPreference mFpsInfoTextSizePreference;
 
     @Override
@@ -156,7 +158,7 @@ public class DeviceSettings extends PreferenceFragment
         mVibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());
 
-        mVibratorStrengthPreference =  (VibratorStrengthPreference) findPreference(KEY_VIBSTRENGTH);
+        mVibratorStrengthPreference =  (CustomSeekBarPreference) findPreference(KEY_VIBSTRENGTH);
         if (Utils.fileWritable(FILE_LEVEL)) {
             mVibratorStrengthPreference.setValue(sharedPrefs.getInt(KEY_VIBSTRENGTH,
                 Integer.parseInt(Utils.getFileValue(FILE_LEVEL, DEFAULT))));
