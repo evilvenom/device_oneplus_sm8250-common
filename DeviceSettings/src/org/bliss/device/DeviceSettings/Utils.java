@@ -174,7 +174,7 @@ public class Utils {
     public static String getStringForResourceName(final Resources res,
                                                   final String resourceName,
                                                   final String defaultValue) {
-        final int resId = res.getIdentifier(resourceName, "string", "org.xtended.device.DeviceSettings");
+        final int resId = res.getIdentifier(resourceName, "string", "org.bliss.device.DeviceSettings");
         if (resId <= 0) {
             Log.e(TAG, "No resource found for " + resourceName);
             return defaultValue;
