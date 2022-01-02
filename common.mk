@@ -436,6 +436,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/odm/odm_feature_list:$(TARGET_COPY_OUT_ODM)/etc/odm_feature_list
 
+# OnePlus Camera
+PRODUCT_PACKAGES += \
+    OnePlusCameraOverlay
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
